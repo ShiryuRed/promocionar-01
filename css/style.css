@@ -1,0 +1,148 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .buttons a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  .whatsapp {
+    background-color: #25D366;
+  }
+  
+  .phone {
+    background-color: #007BFF;
+  }
+  
+  footer {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  
+  /* Estilos para los planes de servicios */
+
+#planes {
+    text-align: center;
+  }
+  
+  .plan {
+    display: inline-block;
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #007BFF;
+    background-color: #fff;
+    text-align: left;
+  }
+  
+  .plan h3 {
+    color: #007BFF;
+  }
+  
+  .plan p {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos adicionales */
+  
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .buttons a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  .whatsapp {
+    background-color: #25D366;
+  }
+  
+  .phone {
+    background-color: #007BFF;
+  }
+  
+  footer {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      padding: 10px;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    nav.show ul {
+      display: block;
+      text-align: center;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    .buttons a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
