@@ -1,29 +1,88 @@
 /* Estilos generales */
 * {
-  padding: 0;
-  margin: 0;
+  scroll-behavior: smooth;
 }
+
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
+  font-family: 'Sen', sans-serif;
+}
+.no-scroll {
+  overflow: hidden;
+} 
+
+header {
+  background-color: #007BFF90;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+}
+
+h2 {
+  border: 2px solid red;
+}
+
+.mobil-menu { 
+  font-size: 35px;
+  color: #fff;
+  display: grid;
+  transition: transform .6s;
+  padding: 10px;
+  transform: scale(1);
+}
+.mobil-menu:active { 
+  transform: scale(.6);
+}
+
+.close {
+  transform: scale(0);
+}
+
+.mobil-menu > i {
+  transition: transform .4s;
+  grid-column: 1 / 2;
+  grid-row:  1/ 2;
+}
+
+
+.nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.responsive-menu {
+  list-style: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform .6s;
+  transform: translateY(calc(-100vh - 55px));
+  font-size: 22px;
+  background: #0009;
+}
+
+.open-menu {
+  transform: translateY(0);
+}
+
+.responsive-li {
+  border-bottom: 2px solid #ff0;
+  background: #0007;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: transform .5s;
+}
+
+.responsive-li:active {
+  transform: scale(.6);
+}
   
 nav ul li a {
   color: #fff;
@@ -35,6 +94,13 @@ nav ul li a {
 .background-inicio {
   height: 100vh;
   width: 100vw;
+  display: flex;
+}
+
+.h1-title {
+  color: #fff;
+  margin: auto;
+
 }
 
 	svg {
@@ -147,31 +213,3 @@ nav ul li a {
     text-align: center;
   }
   
-  @media only screen and (max-width: 600px) {
-    header {
-      padding: 10px;
-    }
-  
-    nav ul {
-      display: none;
-    }
-  
-    nav.show ul {
-      display: block;
-      text-align: center;
-    }
-  
-    section {
-      padding: 20px;
-    }
-  
-    .buttons a {
-      display: block;
-      margin-bottom: 10px;
-    }
-  }
-
-
-
-
-
