@@ -11,7 +11,7 @@ body {
 } 
 
 header {
-  background-color: #007BFF90;
+  background-color: #5EE6EB90;
   color: #fff;
   text-align: center;
   position: fixed;
@@ -19,9 +19,13 @@ header {
 }
 
 h2 {
-  border: 2px solid red;
+  margin: 20px auto;
+}
+h3 {
+  margin: 10px auto;
 }
 
+/* menu responsive */
 .mobil-menu { 
   font-size: 35px;
   color: #fff;
@@ -89,7 +93,7 @@ nav ul li a {
   text-decoration: none;
   padding: 10px;
 }
-
+/* menu responsive */
 
 .background-inicio {
   height: 100vh;
@@ -103,38 +107,62 @@ nav ul li a {
 
 }
 
-	svg {
-		position: absolute;
-		top: 0;
-		left: 0;
-    width: 100%;
-    height: 100%;
-		box-sizing: border-box;
-		display: block;
-		background-color: #0e4166;
-    z-index: -1;
-    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
-	}
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+  width: 100%;
+  height: 100%;
+	box-sizing: border-box;
+	display: block;
+	background-color: #0e4166;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, #4D77FF, #0e4166);
+}
 
+.carousel {
+  background-color: #0ff;
+  padding: 30px;
+}
 
-  section {
-    padding: 40px;
-    text-align: center;
-  }
+.img-carousel {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.inicio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.img-1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.servicios {
+  background: #f44;
+}
+.services-list {
+  list-style: none;
+}
+section {
+  text-align: center;
+}
   
-  .buttons {
-    margin-top: 20px;
-    text-align: center;
-  }
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+}
   
-  .buttons a {
-    display: inline-block;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-right: 10px;
-  }
+.buttons a {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
   
   .whatsapp {
     background-color: #25D366;
