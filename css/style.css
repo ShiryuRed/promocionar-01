@@ -1,6 +1,7 @@
 /* Estilos generales */
 * {
   scroll-behavior: smooth;
+  max-width: 100vw;
 }
 
 body {
@@ -26,6 +27,9 @@ h3 {
 
 img {
   width: 100%;
+}
+.background-inicio {
+  max-width: 100vw;
 }
 /* menu responsive */
 .mobil-menu { 
@@ -99,14 +103,12 @@ nav ul li a {
 
 .background-inicio {
   height: 100vh;
-  width: 100vw;
   display: flex;
 }
 
 .h1-title {
   color: #fff;
   margin: auto;
-
 }
 
 svg {
@@ -144,7 +146,7 @@ svg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  overflow: hidden;
+
 }
 .img-1 {
   grid-column: 1 / 3;
