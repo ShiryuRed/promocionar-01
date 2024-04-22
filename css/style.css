@@ -1,7 +1,6 @@
 /* Estilos generales */
 * {
   scroll-behavior: smooth;
-	overflow-x: hidden;
 }
 
 body {
@@ -10,7 +9,6 @@ body {
 .no-scroll {
   overflow: hidden;
 } 
-
 header {
   background-color: #5EE6EB90;
   color: #fff;
@@ -26,6 +24,9 @@ h3 {
   margin: 10px auto;
 }
 
+img {
+  width: 100%;
+}
 /* menu responsive */
 .mobil-menu { 
   font-size: 35px;
@@ -122,12 +123,19 @@ svg {
 }
 
 .carousel {
-  background-color: #0ff;
-  padding: 30px;
+  background-color: #f00;
+  padding: 0;
+  overflow-x: hidden;
+}
+.carousel-container {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transition: transform 2.5s;
 }
 
 .img-carousel {
-  width: 400px;
   height: 300px;
   object-fit: cover;
 }
@@ -136,6 +144,7 @@ svg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  overflow: hidden;
 }
 .img-1 {
   grid-column: 1 / 3;

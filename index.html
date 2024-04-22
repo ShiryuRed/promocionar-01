@@ -12,11 +12,9 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
 
   <script src="https://kit.fontawesome.com/28faa9840b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Tu página web de diseño</title>
 </head>
 
@@ -41,7 +39,7 @@
         <linearGradient id="bg">
           <stop offset="0%" style="stop-color:rgba(212, 219, 173, 0.06)"></stop>
           <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
-          <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+          <stop offset="100%" style="stop-color:rgba(250, 209, 72, 0.2)"></stop>
         </linearGradient>
         <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
     s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
@@ -180,25 +178,11 @@
     <p>Derechos de autor &copy; 2023 | Tu página web de diseño</p>
   </footer>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="css/slick/slick.min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.carousel-container').slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 1500,
-          mobileFirst: true,
-          variableWidth: true,
-      });
-    });
-  </script>
 
   <script src="js/menu-script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       duration: 1000,
